@@ -1,6 +1,6 @@
 <h4 align="right"> 
 <span href=".README.md">English</span> 
-<a href="http://www.pakeplus.com/" 
+<a href="https://ppofficial.netlify.app/zh/" 
 style="margin: 0 10px;" >简体中文</a> 
 <a href="https://github.com/Sjj1024/PakePlus/discussions/108">日本语</a>
 </h4>  
@@ -19,13 +19,14 @@ style="margin: 0 10px;" >简体中文</a>
     <a href="https://hellogithub.com/repository/d148f8fac78b45fe9b94c82757c3f86b" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=d148f8fac78b45fe9b94c82757c3f86b&claim_uid=LXfeQOxRDEmSUGC&theme=small" alt="Featured｜HelloGitHub"></a>
 </p>
 
-<div align="left">PakePlus supports Mac, Windows, Linux, and Android & iOS. There’s no need to install complex dependencies locally— all you need is a Github Token. Plus, PakePlus is only about 10MB in size. For the latest version, please see the <a href="[#popular-packages](https://github.com/Sjj1024/PakePlus/releases)">release page</a>. or visit: <a href="https://pakeplus.pages.dev" target="_blank">PakePlus Web</a>. Check the README for information on <a href="#popular-packages">popular packages</a> and <a href="#development">custom development</a>. Feel free to share your suggestions in the <a href="https://github.com/Sjj1024/PakePlus/discussions">discussion area</a>.</div>
+<div align="left">PakePlus supports Mac, Windows, Linux, and Android & iOS. There’s no need to install complex dependencies locally, PakePlus is only about 10MB in size. For the latest version, please see the <a href="[#popular-packages](https://github.com/Sjj1024/PakePlus/releases)">release page</a>. or visit: <a href="https://pakeplus.pages.dev" target="_blank">PakePlus Web</a>. 
+Document: <a href="https://pakeplus.com/guide/" target="_blank">PakePlus Guide</a></div>
 
 https://github.com/user-attachments/assets/b88bf541-0b26-4020-9eec-da79e1734fc9
 
 ## Features
 
--   🎐 Approximately 20 times smaller than Electron (less than 5MB!) and 10 times faster.
+-   💎 Approximately 20 times smaller than Electron (less than 5MB!) and 10 times faster.
 -   🚀 Built with Rust Tauri, PakePlus is lighter and faster than JavaScript-based frameworks.
 -   📦 Comes with rich built-in features — supports shortcuts, immersive windows, and minimalist customization.
 -   👻 PakePlus is a minimalist tool that replaces traditional packaging with Tauri for cross-platform desktop apps.
@@ -37,6 +38,9 @@ https://github.com/user-attachments/assets/b88bf541-0b26-4020-9eec-da79e1734fc9
 -   🎨 Beautiful and user-friendly UI — better experience for beginners, supports Chinese names for packaging.
 -   📡 Usable directly via the web, but the client offers stronger functionality and is recommended.
 -   🔐 Data security — your token is stored only locally, and your project stays safely in your own Git repo.
+-   🍔 Supports local packaging and does not require installation of any dependent environments. Local packaging only takes 30 seconds
+-   🥥 It's okay without Github Token, local packaging is simple and convenient, and no Token is needed
+-   ⚔️ Support calling system level APIs in JS scripts, such as downloading files/executing commands/opening new windows, etc
 -   🍀 Supports static file packaging — drop in a compiled dist folder or index.html from Vue/React to create a client app.
 -   🐞 Debug mode supported — find and eliminate bugs during preview or release.
 -   💬 If you run into any issues, feel free to join our technical community for help.
@@ -116,7 +120,7 @@ PakePlus supports installation packages for both ARM and Intel architectures. Mo
    double-click to install, and run the app. or visit web: <a href="https://pakeplus.pages.dev" target="_blank">PakePlus Web</a>
 
 2. Configure a Github Token, create a new project, and set up the configurations. get token guide:  
-   <a href="https://sjj1024.github.io/PakePlus/index_en.html">English</a> <a href="https://pakeplus.com/guide/token.html" style="margin: 0 50px;">简体中文</a><a href="https://sjj1024.github.io/PakePlus/index_ja.html">日本语</a>
+   <a href="https://sjj1024.github.io/PakePlus/index_en.html">English</a> <a href="https://pakeplus.com/zh/guide/token.html" style="margin: 0 50px;">简体中文</a><a href="https://sjj1024.github.io/PakePlus/index_ja.html">日本语</a>
 
 ```
 Explanation of Github Token permissions:
@@ -153,7 +157,7 @@ sudo xattr -r -d com.apple.quarantine /Applications/YourAppName.app
 
 4. After you add the GitHub Token, PakePlus will fork a PakePlus repository into your own repository. All your future projects will rely on this repository for creation and compilation, so please do not delete your PakePlus repository.
 
-## Contribution Guidelines
+## Custom Development
 
 If you want to Contribution PakePlus, ensure your environment is prepared beforehand. Make sure Rust `>=1.63` and Node `>=16` (e.g., `16.18.1`) are installed on your computer. For installation guidance, please refer to the [Tauri Documentation](https://tauri.app/v1/guides/getting-started/prerequisites).
 
@@ -172,8 +176,6 @@ pnpm run build
 ```
 
 All work is conducted openly on GitHub. Whether you are a core team member or an external contributor, all Pull Requests must go through the same review process.
-
-Please ensure that you have maintained at least one tauri project for at least one year
 
 ## Support
 
